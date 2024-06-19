@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem você é(Kawaii version)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1><span id="titulo">Qual personagem você é</span></h1>
+    </header>
+    
+    <section class="section">
+        <div>
+            <div id="escolhas">
+                <p>Você é homem ou mulher?
+                 <input type="radio" name="radsex" id="masc" >
+                 <label for="masc">Homem</label>
+                 <input type="radio" name="radsex" id="fem">
+                 <label for="fem">Mulher</label>
+                 <input type="radio" name="radsex" id="other" >
+                 <label for="other">Outro</label>
+                </p>
+                <p>Prefere cores frias ou quentes?
+                    <input type="radio" name="colors" id="frias">
+                    <label for="frias">Frias</label>
+                    <input type="radio" name="colors" id="quentes">
+                    <label for="quentes">Quentes</label>
+                    <input type="radio" name="colors" id="sla">
+                    <label for="sla">Ambas!</label>
+                </p>
+                <p>Você é mais:
+                    <input type="radio" name="quality" id="inteligente">
+                    <label for="inteligente">Inteligente</label>
+                    <input type="radio" name="quality" id="corajoso">
+                    <label for="corajoso">Corajoso</label>
+                    <input type="radio" name="quality" id="calmo">
+                    <label for="calmo">Calmo</label>
+                </p>
+            </div>
+            <abbr title="Clique para verificar"><input type="button" value="Verificar" class="botao" id='botao' onclick="verificar()"></abbr>
+            
+        </div>
+        <div id="foto">
+            <img id="imagem" src="" alt="">
+        </div>
+        <abbr title="Espero que goste!!" id="abrev">
+            <div id="res">
+                <strong>Responda as perguntas acima para saber o resultado!</strong>
+    
+            </div>
+        </abbr>
+        <p id="texto2"></p>
+        <button onclick="Voltar()" id="botao2">Tentar Novamente</button>
+        <abbr title="Maluca da Peridot">
+        <div id="gifp">
+            <img src="midia/peridot.gif" alt="Gif da peridot" id="gif" class="gif">
+        </div></abbr>
+    </section>
+    <abbr title="Menu" class="abrev2">
+        <a href="pag2.html" rel="external" target="_blank">
+            <div id="caixa">
+                <p><b>Clique aqui para acessar o Menu de Quizzes! <br><img src="favicon.ico" alt="icon" class="logo"></b></p>
+            </div>
+        </a>
+    </abbr>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+*{
+    text-align: center;
+}
+
+body {
+    font: normal 13pt arial;
+    background-image: url('fundos/wallpaperfundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0; /* Para remover margens padrão do corpo */
+    overflow-y: hidden;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+
+.botao {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: #2146eb; /* Cor inicial do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remover borda padrão */
+    padding: 10px 20px; /* Espaçamento interno para fazer o botão maior */
+    cursor: pointer; /* Muda o cursor para indicar que o elemento é clicável */
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fffff5;
+    border-radius: 50px;
+}
+
+.botao:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+    background-color: #1c18e9e5; /* Nova cor de fundo ao passar o mouse */
+    color: #ffff;
+}
+
+#gif {
+    width: 250px;
+    height: 250px;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow:5px 5px 5px 2px #000000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    position: absolute to center;
+}
+
+#gif:hover {
+    transform: scale(0.9);
+}
+
+#botao2 {
+    position: absolute;
+    bottom: 20px; /* Distância do fundo do container */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajuste fino para centralizar exatamente */
+    /* Restante do seu CSS para #botao2 aqui */
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: blue;
+    color: white;
+    display: none;
+}
+
+p{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    margin-left: 400px;
+    margin-top: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.836);
+    position: relative;
+    background: #fcfcfc; /* Cor de fundo da section ajustada */
+}
+
+section::before, section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid transparent;
+    border-image: linear-gradient(60deg, transparent, #ee2a1c, transparent) 1;
+    animation: moveLight 4s linear infinite;
+    z-index: -1; /* Mantém os pseudo-elementos atrás do conteúdo da section */
+}
+
+section::after {
+    filter: hue-rotate(180deg);
+    animation-direction: reverse;
+}
+  
+  @keyframes moveLight {
+    0% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  
+
+#titulo {
+    text-shadow: 5px 5px 10px black;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+}
+
+#caixa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 30px;
+    background-image: Linear-gradient(to right,#8AACF0, #BFDEF0, #FFFFFF);
+    color: #000000;
+    border-radius: 70px;
+    padding: 15px;
+    width: 150px;
+    height: 100px;
+    border: 3px solid black;
+    cursor: pointer;
+    margin-left: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#caixa:hover {
+    transform: scale(1.05);
+    
+}
+
+#imagem {
+    height: 250px;
+    border-radius: 50px;
+    top: 15px;
+    margin-top: none !important; 
+    
+}
+
+#res {
+  color: #e6e6e6;
+  text-align: center;
+  animation: glow 1s infinite alternate;
+  font-family: monospace;
+  background-color: #363636;
+  padding: 5px;
+  text-shadow: 2px 1px 1px rgb(49, 48, 48);
+}
+
+
+#texto2 {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+#abrev {
+    text-decoration: none;
+}
+
+
+#abrev2 {
+    text-decoration: none;
+}
